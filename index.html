@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Harsha Vardhan | B.Tech Portfolio</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: #020617;
+      color: #e5e7eb;
+      line-height: 1.6;
+      padding-top: 70px; /* navbar offset */
+    }
+
+    /* NAVBAR */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #020617;
+      padding: 14px 0;
+      text-align: center;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: #e5e7eb;
+      margin: 0 18px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
+    }
+
+    /* HERO */
+    header {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+      animation: float 4s ease-in-out infinite;
+      scroll-margin-top: 80px;
+    }
+
+    header h1 {
+      font-size: 3.2rem;
+      margin-top: 16px;
+    }
+
+    header p {
+      font-size: 1.25rem;
+      margin-top: 12px;
+      color: #94a3b8;
+      max-width: 750px;
+    }
+
+    /* SECTIONS */
+    section {
+      padding: 90px 10%;
+      scroll-margin-top: 80px;
+    }
+
+    h2 {
+      font-size: 2.2rem;
+      margin-bottom: 24px;
+      border-left: 4px solid #38bdf8;
+      padding-left: 14px;
+    }
+
+    .card {
+      background: #020617;
+      padding: 26px;
+      border-radius: 16px;
+      margin-bottom: 24px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+    }
+
+    /* SKILLS */
+    .skills span {
+      display: inline-block;
+      background: #020617;
+      border: 1px solid #1e293b;
+      padding: 10px 18px;
+      border-radius: 30px;
+      margin: 8px;
+      font-size: 0.95rem;
+      color: #cbd5f5;
+    }
+
+    .highlight {
+      color: #7dd3fc;
+      font-weight: 600;
+    }
+
+    /* PHOTO */
+    .profile-photo {
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #38bdf8;
+      box-shadow: 0 0 40px rgba(56,189,248,0.25);
+      animation: glow 3s ease-in-out infinite;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      background: #020617;
+      color: #94a3b8;
+    }
+
+    .socials {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 10px;
+    }
+
+    .socials a {
+      width: 44px;
+      height: 44px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background: #020617;
+      border: 1px solid #1e293b;
+      color: #cbd5f5;
+      text-decoration: none;
+      font-size: 1.1rem;
+      transition: all 0.3s ease;
+    }
+
+    .socials a:hover {
+      color: #38bdf8;
+      border-color: #38bdf8;
+      transform: translateY(-3px);
+      box-shadow: 0 10px 25px rgba(56,189,248,0.25);
+    }
+
+    /* ANIMATIONS */
+    .fade-up {
+      opacity: 0;
+      transform: translateY(40px);
+      animation: fadeUp 1s ease forwards;
+    }
+
+    .delay-1 { animation-delay: 0.2s; }
+    .delay-2 { animation-delay: 0.4s; }
+    .delay-3 { animation-delay: 0.6s; }
+
+    @keyframes fadeUp {
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-12px); }
+    }
+
+    @keyframes glow {
+      0%, 100% { box-shadow: 0 0 30px rgba(56,189,248,0.25); }
+      50% { box-shadow: 0 0 55px rgba(56,189,248,0.45); }
+    }
+
+    @media(max-width:768px){
+      header h1 { font-size: 2.3rem; }
+      section { padding: 70px 6%; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#experience">Experience</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<!-- HERO -->
+<header id="home">
+  <img src="https://media.licdn.com/dms/image/v2/D4E03AQEKp2t6MT6yJA/profile-displayphoto-crop_800_800/B4EZk1SISCKgAI-/0/1757535570478?e=1770854400&v=beta&t=fKK1Wjaope-ZSs7KLEg1GQFmqY64WJrq8w4Q-3vypxQ" alt="Harsha Vardhan" class="profile-photo fade-up">
+  <h1 class="fade-up delay-1">Harsha Vardhan</h1>
+  <p class="fade-up delay-2">
+    
+  <strong>B.Tech 1st Year Student</strong> at 
+  <em>Marwadi University, Rajkot</em> <br>
+  <span style="font-style: italic; letter-spacing: 1px;">
+    Web Developer • UX Designer • Video Editor • Crypto Investor
+  </span>
+
+  </p>
+</header>
+
+<!-- ABOUT -->
+<section id="about" class="fade-up">
+  <h2>About Me</h2>
+  <div class="card">
+    <p>
+      I am a B.Tech 1st year student at Marwadi University, Rajkot, with a deep passion for technology, design, and digital finance. I actively explore web development, UX design, and emerging technologies while continuously improving my technical and creative skills.
+Through disciplined learning, market research, and analytical decision-making, I have successfully earned ₹1,00,000+ in the crypto field. I strongly believe in consistency, risk management, and data-driven strategies. My goal is to build innovative digital products and achieve long-term growth in both technology and finance.
+    </p>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="fade-up delay-1">
+  <h2>Skills</h2>
+  <div class="card skills">
+    <span>Adobe Premiere Pro</span>
+    <span>Web Development</span>
+    <span>HTML</span>
+    <span>CSS</span>
+    
+    <span>UX / UI Design</span>
+    <span>Figma</span>
+    <span>Crypto Investment</span>
+    <span>Content Creation</span>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="fade-up delay-2">
+  <h2>Experience</h2>
+  <div class="card">
+    <p>I have hands-on knowledge of affiliate marketing and social media management, with experience in creating, managing, and optimizing digital content for growth and engagement. Alongside this, I possess a strong understanding of investments, including crypto trading, where I have achieved consistent profitability through disciplined risk management and market analysis. I focus on data-driven strategies, audience behavior, and long-term value creation across digital platforms and financial markets.</p>
+  </div>
+  
+</section>
+
+
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="fade-up delay-3">
+  <h2>Projects</h2>
+  <div class="card">
+    <p>Designed and developed a personal portfolio website to showcase my skills, projects, and achievements in web development, UI/UX design, and digital creativity. Alongside this, I actively manage an Instagram page and a YouTube channel where I create and share content related to video editing, design tips, and creative workflows. Through consistent content creation, branding, and audience engagement, I focus on building a strong personal brand, improving communication skills, and gaining real-world experience in social media management, content strategy, and digital growth.</p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="fade-up delay-3">
+  <h2>Contact</h2>
+  <div class="card">
+    <p>Email: harshamopuru14@gmail.com</p>
+    <p>GitHub: github.com/harsha0710</p>
+    <p>LinkedIn: linkedin.com/in/harsha0710</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="socials">
+    <a href="https://www.instagram.com/harshaa._28/">INSTAGRAM</a>
+    <a href="https://github.com/harshavardhan0710">GITHUB</a>
+    <a href="https://mail.google.com/mail/u/1/?view=cm&fs=1&to=harshamopuru14@gmail.com&tf=1">Gmail</a>
+    <a href="https://www.linkedin.com/in/harsha0710/">LINKEDIN</a>
+  </div>
+  <p>© 2026 Mopuru Harsha Vardhan </p>
+</footer>
+
+</body>
+</html>
